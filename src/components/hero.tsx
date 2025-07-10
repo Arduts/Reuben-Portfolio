@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 
-import { ComputersCanvas } from "./canvas";
+
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
+import image from '../assets/rdpic-removebg-preview.png';
+
 
 // Hero
 export const Hero = () => {
@@ -23,17 +25,20 @@ export const Hero = () => {
         {/* About Me */}
         <div>
           <h1 className={cn(styles.heroHeadText, "text-white")}>
-            Hi, I'm <span className="text-[#915eff]">Shubham</span>
+            Hi, I'm <span className="text-[#915eff]">Reuben Palabasan</span>
           </h1>
           <p className={cn(styles.heroSubText, "mt-2 text-white-100")}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+            I am a software developer <br className="sm:block hidden" />
           </p>
         </div>
       </div>
 
       {/* Computer Model */}
-      <ComputersCanvas />
+<div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+  <img src={image} alt="Preview" style={{ maxWidth: '100%', height: 'auto', marginTop: '31rem' }} />
+</div>
+
+
 
       {/* Scroll to about section */}
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
