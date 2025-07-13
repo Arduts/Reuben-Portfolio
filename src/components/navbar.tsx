@@ -5,6 +5,7 @@ import { logo, menu, close } from "../assets";
 import { NAV_LINKS } from "../constants";
 import { styles } from "../styles";
 import { cn } from "../utils/lib";
+import LogoImage from '../assets/Reuben_Dominic_Logo_White_Text_Transparent_BG.png';
 
 type NavbarProps = {
   hide: boolean;
@@ -49,7 +50,7 @@ export const Navbar = ({ hide }: NavbarProps) => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="Logo" className="w-9 h-9 object-contain" />
+          <img src={LogoImage} alt="Logo" className="w-9 h-9 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
             Reuben&nbsp;<span className="sm:block hidden">| Developer</span>
           </p>

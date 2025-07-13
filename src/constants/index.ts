@@ -38,7 +38,12 @@ import {
   github,
 } from "../assets";
 import tpbImage from '../assets/projects/tpb.png';
-
+import ptriImage from '../assets/projects/ptri.png';
+import mlimage from '../assets/company/moodlearning.png';
+import tpb1image from '../assets/projects/tpb1.png';
+import nncimage from '../assets/projects/nnc.png';
+import ciccimage from '../assets/projects/cicc.png';
+import blgfimage from '../assets/projects/blgf.png';
 
 // Navbar Links
 export const NAV_LINKS = [
@@ -71,7 +76,7 @@ export const SERVICES = [
     icon: web,
   },
   {
-    title: "Front End Developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
@@ -96,20 +101,8 @@ export const TECHNOLOGIES = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
   },
   {
     name: "Node JS",
@@ -131,10 +124,7 @@ export const TECHNOLOGIES = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
 ] as const;
 
 // Experiences
@@ -142,8 +132,8 @@ export const EXPERIENCES = [
   {
     title: "Developed a Cross-Platform Travel App and Website",
     company_name: "Moodlearning Inc.",
-    icon: starbucks,
-    iconBg: "#383E56",
+    icon: mlimage,
+    iconBg: "#fff",
     date: "August 2024 - July 2025",
     points: [
       "Built a travel application and its accompanying website with a unified design and functionality across mobile and web platforms. Integrated APIs, location-based features, and ensured performance optimization.",
@@ -151,42 +141,36 @@ export const EXPERIENCES = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "Front-End Development for a Moodle-Based Website",
+    company_name: "Moodlearning Inc.",
+    icon: mlimage,
+    iconBg: "#fff",
+    date: "Feb 2024 - July 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and implemented the front-end interface of a Moodle-based learning management system. Focused on responsive design, user experience, and custom UI components using a template engine.",
+      "Tech Stack: Mustache, Bootstrap, PHP, jQuery, HTML5, PostgreSQL",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Developed a Responsive WordPress Website",
+    company_name: "Moodlearning Inc.",
+    icon: mlimage,
+    iconBg: "#fff",
+    date: "December 2023 - June 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Designed and built a fully responsive WordPress website from the ground up. Customized themes, created a custom plugin, and optimized the user interface for mobile and desktop.",
+      "Tech Stack: PHP, MySQL, WordPress",
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    title: "Assisted in an Information Management System",
+    company_name: "Moodlearning Inc.",
+    icon: mlimage,
+    iconBg: "#fff",
+    date: "June 2024 - November 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Contributed to a web-based information management system by helping with both front-end and back-end development. Ensured data was displayed accurately and responsively in line with user requirements.",
+      "Tech Stack: Laravel, PHP, Bootstrap, JavaScript",,
     ],
   },
 ] as const;
@@ -201,47 +185,155 @@ export const PROJECTS = [
   {
     name: "Travel Philippines",
     description:
-      "Disney+ is one of the biggest streaming platforms used by millions of people world-wide and allows us to stream high quality content in 4k and various other formats",
+      "Travel Philippines is the government‑backed, free travel app and Progressive Web App launched by the Department of Tourism (DOT) and the Tourism Promotions Board (TPB). It serves as a one‑stop digital travel companion for exploring the country",
     tags: [
       {
-        name: "react",
+        name: "react.js",
         color: "blue-text-gradient",
       },
       {
-        name: "firebase",
+        name: "reactnative",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS/Bootstrap",
         color: "pink-text-gradient",
+      },
+            {
+        name: "PostgreSQL",
+        color: "white-text-gradient",
       },
     ],
     image: tpbImage,
-    source_code_link: "https://github.com/sanidhyy/disney-clone",
     live_site_link: "https://travelph-staging.moodlearners.com/",
+  },
+  {
+      name: "Salinhabi",
+    description:
+      "SalinHABI is a Philippine-based digital initiative created by DOST‑PTRI (Department of Science and Technology – Philippine Textile Research Institute) aimed at preserving and promoting the country’s traditional handloom weaving heritage.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Wordpress",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ptriImage,
+    live_site_link: "https://salinhabi.com.ph/",
+  },
+    {
+      name: "E-Resource Portal",
+    description:
+      "An attached agency of the Department of Tourism, the Tourism Promotions Board (TPB) exists to market and promote the Philippines domestically and internationally as a world-class tourism and MICE destination, in strategic partnership with private and public stakeholders to deliver a unique high-value experience for visitors, significantly contributing to increased arrivals, receipts and investments to the country.",
+    tags: [
+      {
+        name: "PHP",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MySQL",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Wordpress",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tpb1image,
+    live_site_link: "https://tpb-staging.moodlearners.com",
+  },
+      {
+      name: "Nutrition Management Infomartion System",
+    description:
+      "The National Nutrition Council , created under the Presidential Decree 491 or the Nutrition Act of the Philippines, is the country's highest policymaking and coordinating body for nutrition. The agency is responsible for formulating, coordinating, and monitoring nutrition policies and programs for integrated multi-sectoral action towards sustainable nutrition. ",
+    tags: [
+      {
+        name: "Laravel",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: nncimage,
+    live_site_link: "https://nnc-nmis.moodlearners.com/",
+  },
+        {
+      name: "Cybercrime Investigation and Coordination Center LMS",
+    description:
+      "(CICC-LMS) is a platform and tool that was created to foster in combating cyber threats. This includes modules, recorded videos, case studies, and assessments. The LMS is a professional tool that has collaborative forums and simulations virtually.",
+    tags: [
+      {
+        name: "Mustache",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+            {
+        name: "PostgreSQL",
+        color: "white-text-gradient",
+      },
+    ],
+    image: ciccimage,
+    live_site_link: "https://lms.cicc-educ.net/",
+  },
+          {
+      name: "Bureau of Local Government Finance e-Learning Hub",
+    description:
+      "The BLGF eLMS is a specialized online platform dedicated to delivering high-quality, accessible, and competency-based training and other professional development interventions tailored for local assessors.",
+    tags: [
+      {
+        name: "Mustache",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PHP",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Bootstrap",
+        color: "pink-text-gradient",
+      },
+                  {
+        name: "PostgreSQL",
+        color: "white-text-gradient",
+      },
+    ],
+    image: blgfimage,
+    live_site_link: "https://blgf-staging.moodlearners.com/",
   },
 
 ] as const;
 
 export const SOCIALS = [
-  {
-    name: "YouTube",
-    icon: youtube,
-    link: "https://www.youtube.com/@OPGAMER.",
-  },
+
   {
     name: "Linkedin",
     icon: linkedin,
-    link: "https://www.linkedin.com/in/sanidhyy",
+    link: "https://www.linkedin.com/in/reuben-dominic-palabasan-509803271/",
   },
-  {
-    name: "Twitter",
-    icon: twitter,
-    link: "https://twitter.com/TechnicalShubam",
-  },
+
   {
     name: "GitHub",
     icon: github,
-    link: "https://github.com/sanidhyy",
+    link: "https://github.com/Arduts",
   },
 ] as const;

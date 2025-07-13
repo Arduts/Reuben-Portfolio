@@ -13,6 +13,8 @@ import {
 } from "./components";
 import Banner from "./components/banner";
 import Footer from "./components/footer";
+import image from './assets/rdpic-removebg-preview.png';
+
 
 // App
 const App = () => {
@@ -26,11 +28,16 @@ const App = () => {
           <Navbar hide={hide} />
           <Hero />
         </div>
-        <About />
+  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '-25rem' }}>
+   <img src={image} alt="About image" style={{ maxWidth: '100%', height: 'auto', marginLeft: '20px' }} />
+
+  <About />
+</div>
+
         <Experience />
         <Tech />
         <Works />
-        <Feedbacks />
+
 
         {/* Contact */}
         <div className="relative z-0">
